@@ -57,6 +57,10 @@ app.get("/contacts", (req, res) => {
   });
 });
 
+app.get("/contacts/new", (req, res) => {
+    res.render("new-contact");
+});
+
 app.listen(3000, "localhost", () => {
   console.log("Listening to port 3000.");
 });
